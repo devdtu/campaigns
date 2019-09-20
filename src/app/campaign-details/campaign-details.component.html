@@ -1,0 +1,44 @@
+<div class="row justify-content-center">
+  <div class="col-md-11">
+    <div class="row px-4 mb-3 py-3 column-name">
+      <div class="col-md-3">
+        DATE
+      </div>
+      <div class="col-md-3">
+        CAMPAIGN
+      </div>
+      <div class="col-md-3">
+        VIEW
+      </div>
+      <div class="col-md-3">
+        ACTIONS
+      </div>
+    </div>
+    <div class="row" *ngFor="let campaign of campaignsSelected">
+      <div class="col-md-3">
+        {{ campaign.date | date }}
+      </div>
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-md-2">
+            <img class="icon-size" src="assets/facebook.png" />
+          </div>
+          <div class="col-md-10 ">
+            <div>{{ campaign.name }}</div>
+            <div>{{ campaign.country }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        View Pricing
+      </div>
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-md-4">Excel</div>
+          <div class="col-md-4">Graph</div>
+          <div class="col-md-4">Schedule</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div>
+  <div class="row py-4 px-5">
+    <div class="text-center  col-md-12">
+      <button
+        (click)="tabSelected(tab)"
+        class="mx-3 btn btn-success"
+        *ngFor="let tab of tabOptions"
+      >
+        {{ tab }}
+      </button>
+    </div>
+  </div>
+</div>
